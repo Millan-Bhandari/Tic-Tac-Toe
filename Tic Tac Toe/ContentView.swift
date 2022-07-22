@@ -25,7 +25,9 @@ struct ContentView: View {
                     }
                         .frame(width: 120, height: 120, alignment: .center)
                         .cornerRadius(30)
-                    
+                        .onTapGesture {
+                            moves[index] = "X"
+                        }
                 }
                 
             })
